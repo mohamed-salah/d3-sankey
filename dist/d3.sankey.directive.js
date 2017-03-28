@@ -1,6 +1,6 @@
 'use strict';
 angular.module('ngSankey', []).directive('ngSankey', function () {
-    var id = 'ng-sankey-' + parseInt(Math.random() * 1000);
+    let id = 'ng-sankey-' + parseInt(Math.random() * 1000);
     return{
         restrict: 'E',
         template: '<div id="' + id + '"><canvas></canvas><svg></svg></div>',
